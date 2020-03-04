@@ -3,12 +3,16 @@ new Vue({
   data: {
     name: 'Marcello',
     job: 'student',
+    age: 31,
     website: 'www.google.com',
     websiteTag: '<a href="www.google.com"></a>'
   },
   methods: {
-    greet: function(time) {
-      return 'Good ' + time + ', ' + this.name
+    add: function(inc) {
+      this.age += inc
+    },
+    subtract: function(dec) {
+      this.age -= dec
     }
   }
 });
