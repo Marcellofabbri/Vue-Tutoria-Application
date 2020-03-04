@@ -13,6 +13,12 @@ new Vue({
     },
     subtract: function(dec) {
       this.age -= dec
+    },
+    logName: function() {
+      alert('name entered')
+    },
+    logAge: function() {
+      alert('age entered')
     }
   }
 });
